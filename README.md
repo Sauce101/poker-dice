@@ -2,7 +2,7 @@
 
 By: Michael Saucedo &copy;2022
 
-Go to site [Create React App](https://github.com/facebook/create-react-app).
+Visit [Poker Dice](https://pokerdice.netlify.app/) it's installable.
 
 ## Another Game of Chance
 
@@ -12,7 +12,5 @@ Press or click on any die to roll the dice:
 
 <br />
 <p align="center">
-  <a href="">
-    <img alt="Gatsby" src="./src/assets/pokerdices/king.svg" />
-  </a>
+    <img alt="poker die" src="./src/assets/pokerdices/king.svg" style="width:150px;" />
 </p>
