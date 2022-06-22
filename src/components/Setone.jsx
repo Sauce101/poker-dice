@@ -106,11 +106,11 @@ export default function Setone() {
   })
 
   const POSITION = [
-    playerCard,
-    playerCardB,
-    playerCardC,
-    playerCardD,
-    playerCardE,
+    { play: playerCard, spinrate: "0.5s" },
+    { play: playerCardB, spinrate: "0.6s" },
+    { play: playerCardC, spinrate: "0.6s" },
+    { play: playerCardD, spinrate: "0.7s" },
+    { play: playerCardE, spinrate: "0.7s" },
   ]
 
   return (
@@ -139,17 +139,17 @@ export default function Setone() {
                     maxWidth: cardsize.cardWidthP,
                     borderRadius: cardsize.radius,
                     margin: "auto",
-                    animation: `${diespin} .3s 1 ease-out`,
+                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
                   },
                   "@media (orientation: landscape)": {
                     maxWidth: cardsize.cardWidthL,
                     borderRadius: cardsize.radius,
                     margin: "auto",
-                    animation: `${diespin} .3s 1 ease-out`,
+                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
                   },
                 }}
               >
-                <CardMedia component="img" src={spot} onClick={rollDice} />
+                <CardMedia component="img" src={spot.play} onClick={rollDice} />
               </Card>
             )}
             {!topface && (
@@ -159,17 +159,17 @@ export default function Setone() {
                     maxWidth: cardsize.cardWidthP,
                     borderRadius: cardsize.radius,
                     margin: "auto",
-                    animation: `${diespin} .3s 1 ease-out`,
+                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
                   },
                   "@media (orientation: landscape)": {
                     maxWidth: cardsize.cardWidthL,
                     borderRadius: cardsize.radius,
                     margin: "auto",
-                    animation: `${diespin} .3s 1 ease-out`,
+                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
                   },
                 }}
               >
-                <CardMedia component="img" src={spot} onClick={rollDice} />
+                <CardMedia component="img" src={spot.play} onClick={rollDice} />
               </Card>
             )}
           </Grid>
